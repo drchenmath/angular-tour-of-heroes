@@ -1,20 +1,15 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<div style="text-align:left">
   <h1>
-    Welcome to {{ title }}!
+  <img src = "../assets/img/logo.png" style="vertical-align:middle" width="32"  alt = "Logo Image" />
+    {{ title }}
   </h1>
-  <img src = "../assets/img/logo.png" alt = "Test Image" />
+  <nav>
+    <a routerLink="/dashboard">Dashboard</a>
+    <a routerLink="/heroes">Heroes</a>
+  </nav>
+  <h1>
+    <router-outlet></router-outlet>
+    <app-messages></app-messages>
+  </h1>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
